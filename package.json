@@ -1,0 +1,40 @@
+{
+  "name": "@nocobase/plugin-yandex-maps",
+  "version": "0.1.5",
+  "description": "Yandex Maps integration plugin for NocoBase",
+  "license": "MIT",
+  "private": true,
+
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+
+  "nocobase": {
+    "client": "dist/client/index.js"
+  },
+
+  "files": [
+    "dist"
+  ],
+
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.json",
+    "pack": "npm pack"
+  },
+
+  "dependencies": {
+    "react-yandex-maps": "^4.0.0"
+  },
+
+  "peerDependencies": {
+    "@nocobase/client": "1.7.x",
+    "@nocobase/server": "1.7.x",
+    "@nocobase/database": "1.7.x"
+  },
+
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "rimraf": "^5.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  }
+}
